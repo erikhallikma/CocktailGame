@@ -1,5 +1,4 @@
 # Ridango Test Assignment
-***
 Assignment was to make a simple game of guess the cocktail using this API: https://www.thecocktaildb.com/api.php
 ***
 ## Frontend
