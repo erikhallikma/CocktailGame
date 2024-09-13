@@ -1,0 +1,12 @@
+<!-- Modal -->
+<div class="modal fade" id="gameOverModal" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-content modal-body p-4">
+    <h1 class="display-6" id="exampleModalLabel">Game Over!</h1>
+    <div class="fs-4 mb-3">Score: {{gameData.score}}</div>
+    <div *ngIf="nameTooLongError" class="mb-1">Keep the name under 30 characters please :)</div>
+    <div class="input-group">
+      <input type="text" placeholder="name" [(ngModel)]="playerName" (keyup.enter)="submit(playerName)" class="form-control">
+      <button *ngIf="!gameData.correct" type="button" class="btn btn-outline-primary" (click)="submit(playerName)" [disabled]="!playerName">Submit</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+INSERT INTO hiscore (name, score) VALUES ('Player1', 12);
+INSERT INTO hiscore (name, score) VALUES ('Player2', 2);
+INSERT INTO hiscore (name, score) VALUES ('Player3', 17);
+INSERT INTO hiscore (name, score) VALUES ('nub', 1);
+INSERT INTO hiscore (name, score) VALUES ('alcoholic', 800);
+INSERT INTO hiscore (name, score) VALUES ('bartender', 1500);
+INSERT INTO hiscore (name, score) VALUES ('qwe', 3);
+INSERT INTO hiscore (name, score) VALUES ('asd', 0);
+INSERT INTO hiscore (name, score) VALUES ('zxc', 0);
+INSERT INTO hiscore (name, score) VALUES ('fgh', 0);
+INSERT INTO hiscore (name, score) VALUES ('jkl', 0);
+INSERT INTO hiscore (name, score) VALUES ('eeeeeeeeeeeeeeeeeeeeeeeeeeeeee', 11);

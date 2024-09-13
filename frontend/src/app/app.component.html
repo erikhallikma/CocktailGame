@@ -1,0 +1,8 @@
+<main class="d-flex align-items-center justify-content-center min-vh-100 text-center">
+  <div class="container w-50 justify-content-center">
+    <WelcomeComponent *ngIf="!apiService.isGameStarted && !apiService.showHiscores"></WelcomeComponent>
+    <GameComponent *ngIf="apiService.isGameStarted"></GameComponent>
+    <GameOverComponent *ngIf="gameData.gameOver"></GameOverComponent>
+    <HiscoresComponent *ngIf="apiService.showHiscores"></HiscoresComponent>
+  </div>
+</main>

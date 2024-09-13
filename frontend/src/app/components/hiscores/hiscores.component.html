@@ -1,0 +1,20 @@
+<h1 class="display-6 fade-in">hiscores</h1>
+<table class="table fade-in">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+  @for (item of apiService.hiscores; track item.id) {
+    <tr>
+      <th>{{$index}}.</th>
+      <td class="col">{{item.name}}</td>
+      <td class="col">{{item.score}}</td>
+    </tr>
+  }
+  </tbody>
+</table>
+<button class="btn btn-primary col-4 fade-in" (click)="newGame()">New Game</button>

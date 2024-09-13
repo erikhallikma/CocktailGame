@@ -1,0 +1,8 @@
+<div class="input-group">
+  <input type="text" [(ngModel)]="guessedName" (keyup.enter)="guess(guessedName)" class="form-control" autofocus>
+  <i *ngIf="!gameData.correct && guessed" class="bi bi-x input-group-text input-group-icon red"></i>
+  <i *ngIf="gameData.correct && guessed" class="bi bi-check input-group-text input-group-icon green"></i>
+  <button *ngIf="!gameData.correct" type="button" class="btn btn-outline-primary" (click)="guess(guessedName)" [disabled]="!guessedName">Guess</button>
+  <button *ngIf="!gameData.correct" type="button" class="btn btn-outline-primary" (click)="skip()">Skip</button>
+  <button *ngIf="gameData.correct" type="button" class="btn btn-outline-primary" (click)="next()" [disabled]="!guessedName">Next</button>
+</div>

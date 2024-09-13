@@ -1,0 +1,33 @@
+ <div class="fade-in">
+    <div class="d-flex justify-content-between mb-3">
+      <span class="card custom-badge badge">Score: {{gameData.score}}</span>
+      <span class="card custom-badge badge">Attempts: {{gameData.attemptsLeft}}</span>
+    </div>
+    <p class="display-6 letter-spacing">{{gameData.name}}</p>
+    <div class="container text-lg-start">
+      <div class="row mb-2">
+        <div class="col card px-3 py-2">
+          <h5 class="mb-0">Description:</h5>
+          <div>{{gameData.instructions}}</div>
+        </div>
+        <div *ngIf="gameData.glass" class="col-auto card px-3 py-2 ms-2 fade-in">
+          <h5 class="mb-0">Glass:</h5>
+          <div>{{gameData.glass}}</div>
+        </div>
+      </div>
+      <div *ngIf="gameData.category || gameData.ingredients || gameData.image" class="row mb-2">
+        <div *ngIf="gameData.category" class="col card px-3 py-2 fade-in">
+          <h5 class="mb-0">Category:</h5>
+          <div>{{gameData.category}}</div>
+        </div>
+        <div *ngIf="gameData.ingredients" class="col card px-3 py-2 ms-2 fade-in">
+          <h5 class="mb-0">Ingredients:</h5>
+          <div>{{gameData.ingredients.join(", ")}}</div>
+        </div>
+        <div *ngIf="gameData.image" class="col-auto p-0 ms-2 fade-in">
+          <img ngSrc="{{gameData.image}}" class="card rounded float-end" alt="404" width="170" height="180" priority>
+        </div>
+      </div>
+    </div>
+    <GameInputComponent></GameInputComponent>
+  </div>

@@ -1,0 +1,13 @@
+.letter-spacing {
+  letter-spacing: 0.2em;
+}
+
+.custom-badge {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  color: black;
+}
